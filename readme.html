@@ -37,10 +37,18 @@
 		.s {
 			color: #d44950;
 		}
+		
+		@media (max-width: 768px) {
+			.github {
+				display: none;
+			}
+		}
 	</style>
 	
 </head>
 <body>
+	<a class="github" href="https://github.com/arkmuntasser/image-comparison/"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://camo.githubusercontent.com/82b228a3648bf44fc1163ef44c62fcc60081495e/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_left_red_aa0000.png"></a>
+	
 	<header>
 		<div class="container">
 			<h1>Image Comparison</h1>
@@ -67,23 +75,23 @@
 			</div>
 			
 			<h2 class="page-header">Read Me</h2>
-			<p>Include the two js files and the one css file included and then set your images as a <code>background-image</code> on <code>.ic-left</code> and <code>.ic-right</code>. Do <strong>not</strong> set the <code>background-image</code> property inline.</p>
+			<p>Include the two(2) js files and the one(1) css file included and then set your images as a <code>background-image</code> on <code>.ic-left</code> and <code>.ic-right</code>. Do <strong>not</strong> set the <code>background-image</code> property inline.</p>
 			<p>Then include the following html where you want the comparison to go on your page.</p>
 			<pre><code class="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"image-compare"</span><span class="nt">&gt;</span>
-	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ic-image ic-left"</span><span class="nt"></span>&gt;</span>
-		<span class="c">&lt;!-- Left Image Box --&gt;</span>
-	<span class="nt">&lt;/div&gt;</span>
-	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ic-image ic-right"</span><span class="nt">&gt;</span>
-		<span class="c">&lt;!-- Right Image Box --&gt;</span>
-	<span class="nt">&lt;/div&gt;</span>
-	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ic-handle"</span><span class="nt">&gt;</span>
-		<span class="c">&lt;!-- handle --&gt;</span>
-	<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ic-image ic-left"</span><span class="nt"></span>&gt;</span>
+    <span class="c">&lt;!-- Left Image Box --&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ic-image ic-right"</span><span class="nt">&gt;</span>
+    <span class="c">&lt;!-- Right Image Box --&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ic-handle"</span><span class="nt">&gt;</span>
+    <span class="c">&lt;!-- handle --&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</code></pre>
 			
 			<h2 class="page-header">Download</h2>
-			<a href="#" class="btn btn-default">View on GitHub</a>
-			<a href="#" class="btn btn-default">Direct Download</a>
+			<a href="https://github.com/arkmuntasser/image-comparison/" class="btn btn-default" target="_blank">View on GitHub</a>
+			<a href="image-comparison.zip" class="btn btn-default">Direct Download</a>
 		</div>
 	</main>
 	

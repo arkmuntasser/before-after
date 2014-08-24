@@ -1,6 +1,5 @@
 .image-compare {
 	width: 100%;
-	/*max-width: 800px;*/
 	height: 600px;
 	position: relative;
 	background-color: whitesmoke;
@@ -59,6 +58,10 @@
 }
 
 @media (max-width: 768px) {
+	.image-compare {
+		height: 225px;
+	}
+	
 	.ic-handle {
 		display: none !important;
 	}
