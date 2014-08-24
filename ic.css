@@ -3,6 +3,7 @@
 	height: 600px;
 	position: relative;
 	background-color: whitesmoke;
+	cursor: col-resize;
 }
 
 .ic-image {
