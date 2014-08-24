@@ -92,3 +92,13 @@ footer {
 .nt { color: #2f6f9f; }
 .na { color: #4f9fcf; }
 .s { color: #d44950; }
+
+/* Button */
+.btn-link {
+	color: #ff9800;
+	text-transform: uppercase;
+}
+.btn-link:hover {
+	color: #ff9800;
+	text-decoration: none;
+}
