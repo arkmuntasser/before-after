@@ -7,7 +7,7 @@
 	<meta name="description" content="A jquery plugin to make before and after comparisons pop!">  
 	<meta name="author" content="Amir R Muntasser">
 	
-	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+	<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
 	<link href="style.css" rel="stylesheet" type="text/css">
 	<link href="ic.css" rel="stylesheet" type="text/css">
 	
@@ -42,33 +42,29 @@
 		<div class="container">			
 			<h2 class="page-header">Live Demo</h2>
 			<div class="image-compare">
-				<div class="ic-image ic-left">
-					<!-- Left Image Box -->	
-				</div>
-				<div class="ic-image ic-right">
-					<!-- Right Image Box -->
-				</div>
-				<div class="ic-handle">
-					<!-- handle -->
-				</div>
+				<!-- Left Image Box -->
+				<span class="ic-image ic-left" data-bgi="lindsay-ruby.jpeg"></span>
+
+				<!-- Right Image Box -->
+				<span class="ic-image ic-right" data-bgi="barbara-yang.jpeg"></span>
+
+				<!-- handle -->
+				<span class="ic-handle"></span>
 			</div>
 			<div style="text-align: right;">
 				<small>*Art by JAS.</small>
 			</div>
 			
 			<h2 class="page-header">Read Me</h2>
-			<p>Include the two (2) js files and the one (1) css file included and then set your images as a <code>background-image</code> on <code>.ic-left</code> and <code>.ic-right</code>. Do <strong>not</strong> set the <code>background-image</code> property inline.</p>
+			<p>Include the two (2) js files and the one (1) css file included and then set your images using <code>data-bgi</code> on each <code>.ic-image</code>. Do <strong>not</strong> set the <code>background-image</code> property inline.</p>
 			<p>Then include the following html where you want the comparison to go on your page.</p>
 			<pre><code class="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"image-compare"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ic-image ic-left"</span><span class="nt"></span>&gt;</span>
-    <span class="c">&lt;!-- Left Image Box --&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ic-image ic-right"</span><span class="nt">&gt;</span>
-    <span class="c">&lt;!-- Right Image Box --&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ic-handle"</span><span class="nt">&gt;</span>
-    <span class="c">&lt;!-- handle --&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
+  <span class="c">&lt;!-- Left Image Box --&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"ic-image ic-left"</span> <span class="na">data-bgi=</span><span class="s">"ruby.jpg"</span><span class="nt">&gt;</span></span><span class="nt">&lt;/span&gt;</span>
+  <span class="c">&lt;!-- Right Image Box --&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"ic-image ic-right"</span> <span class="na">data-bgi=</span><span class="s">"yang.jpg"</span><span class="nt">&gt;</span><span class="nt">&lt;/span&gt;</span>
+  <span class="c">&lt;!-- handle --&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"ic-handle"</span><span class="nt">&gt;</span><span class="nt">&lt;/span&gt;</span>
 <span class="nt">&lt;/div&gt;</code></pre>
 			
 			<h2 class="page-header">Download</h2>
@@ -84,9 +80,9 @@
 	
 </body>
 
-<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script src="jquery.event.move.js"></script>
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<!--<script src="jquery.event.move.js"></script>-->
 <script src="jquery.ic.js"></script>
 <script>
 	$(window).scroll(function() {

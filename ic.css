@@ -6,7 +6,7 @@
 	cursor: col-resize;
 }
 
-.ic-image {
+.image-compare .ic-image {
 	position: absolute;
 	top: 0;
 	bottom: 0;
@@ -16,23 +16,19 @@
 	background-size: cover;
 }
 
-.ic-left {
+.image-compare .ic-left {
 	left: 0;
 	width: 50%;
 	background-position: left;
-	
-	background-image: url('lindsay-ruby.jpeg');
 }
 
-.ic-right {
+.image-compare .ic-right {
 	right: 0;
 	width: 50%;
 	background-position: right;
-	
-	background-image: url('barbara-yang.jpeg');
 }
 
-.ic-handle {
+.image-compare .ic-handle {
 	position: absolute;
 	z-index: 10;
 	background-color: #fff;
@@ -55,7 +51,7 @@
 }
 
 .image-compare:hover .ic-handle {
-	display: block;
+	display: block !important;
 }
 
 @media (max-width: 768px) {
@@ -63,7 +59,7 @@
 		height: 225px;
 	}
 	
-	.ic-handle {
+	.image-compare .ic-handle {
 		display: none !important;
 	}
 }
