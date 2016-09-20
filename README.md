@@ -1,4 +1,4 @@
-image-comparison
+Before After
 ================
 
 Make your before and after comparisons pop!
