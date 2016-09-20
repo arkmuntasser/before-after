@@ -1,4 +1,4 @@
-Before After
+before-after
 ================
 
 Make your before and after comparisons pop!
