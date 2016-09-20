@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Before & After</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+
+	<link href="before-after.css" rel="stylesheet">
+
+  <style>
+    * { box-sizing: border-box; }
+
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      margin-bottom: 15px;
+      padding: 10px 15px;
+      background-color: #e91e63;
+    }
+
+    h1 {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 24px;
+      color: #fff;
+    }
+
+    .container {
+      margin: 0 auto;
+      padding: 0 15px;
+      width: 100%;
+      max-width: 792px;
+    }
+
+    .before-after { border: 5px solid whitesmoke; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Before & After</h1>
+  </header>
+
+  <div class="container">
+    <div class="before-after" data-ba-widget>
+      <div class="before-after-image before-after-image-left" data-ba-left>
+        <img src="barbara-yang.jpg">
+      </div>
+      <div class="before-after-image before-after-image-right" data-ba-right>
+        <img src="lindsay-ruby.jpg">
+      </div>
+  		<div class="before-after-handle" data-ba-handle></div>
+  	</div>
+  </div>
+
+  <script src="before-after.js"></script>
+</body>
+</html>
