@@ -137,6 +137,10 @@ class BeforeAfter {
   }
 
   resetTarget() {
+    if(!this.target) {
+      return;
+    }
+    
     const targetIndex = this.widgets.indexOf(this.target);
     this.handleEls[targetIndex].style.willChange = 'initial';
     this.topImageEls[targetIndex].style.willChange = 'initial';

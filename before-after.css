@@ -39,7 +39,7 @@
 .before-after .before-after-image-top img { display: none; }
 .before-after .before-after-handle {
   position: absolute;
-  z-index: 10;
+  z-index: 2;
   top: 50%;
   left: 50%;
   margin-left: -11px;
