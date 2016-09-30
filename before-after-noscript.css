@@ -1,0 +1,17 @@
+.before-after { cursor: default; }
+
+.before-after .before-after-image-after:before {
+  left: 0;
+  right: auto;
+}
+.before-after .before-after-image-after {
+  position: relative;
+  width: 100%;
+}
+.before-after .before-after-image-before img { display: block; }
+.before-after .before-after-image-after img { display: block; }
+
+.before-after .before-after-handle {
+  opacity: 0;
+  pointer-events: none;
+}

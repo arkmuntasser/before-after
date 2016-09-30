@@ -14,29 +14,46 @@
   height: 100%;
 }
 .before-after .before-after-image {
+  position: relative;
   width: 100%;
 	height: 100%;
   overflow: hidden;
 }
-.before-after .before-after-image-bottom {
+.before-after .before-after-image:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 15px;
+  font-style: italic;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: rgba(0,0,0,.8);
+}
+.before-after .before-after-image-before {
   z-index: 1;
   left: 0;
 }
-.before-after .before-after-image-top {
+.before-after .before-after-image-before:before { content: "before"; }
+.before-after .before-after-image-after {
   position: absolute;
   z-index: 2;
   right: 0;
   top: 0;
-	bottom: 0;
+	before: 0;
   width: 50%;
   background-position: right center;
   background-repeat: no-repeat;
+}
+.before-after .before-after-image-after:before {
+  content: "after";
+  left: auto;
+  right: 0;
 }
 .before-after .before-after-image img {
   display: block;
   width: 100%;
 }
-.before-after .before-after-image-top img { display: none; }
+.before-after .before-after-image-after img { display: none; }
 .before-after .before-after-handle {
   position: absolute;
   z-index: 2;
