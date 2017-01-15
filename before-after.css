@@ -1,7 +1,6 @@
 .before-after {
   position: relative;
 	width: 100%;
-	background-color: whitesmoke;
 	cursor: col-resize;
 }
 .before-after:after {

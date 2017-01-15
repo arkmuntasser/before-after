@@ -1,13 +1,25 @@
 .before-after { cursor: default; }
 
-.before-after .before-after-image-after:before {
-  left: 0;
-  right: auto;
+.before-after .before-after-image-before {
+  position: relative;
+  float: left;
+  width: calc(50% - 3px);
 }
 .before-after .before-after-image-after {
   position: relative;
-  width: 100%;
+  float: right;
+  width: calc(50% - 3px);
 }
+
+@media (max-width: 640px) {
+  .before-after .before-after-image-before,
+  .before-after .before-after-image-after {
+    float: none;
+    margin-bottom: 8px;
+    width: 100%;
+  }
+}
+
 .before-after .before-after-image-before img { display: block; }
 .before-after .before-after-image-after img { display: block; }
 

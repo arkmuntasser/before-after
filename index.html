@@ -5,6 +5,8 @@
 	<title>Before & After</title>
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400|Work+Sans:400,700" rel="stylesheet">
+  <link href="https://arkmuntasser.github.io/fontello.css" rel="stylesheet">
 	<link href="before-after.css" rel="stylesheet">
 
   <noscript>
@@ -18,60 +20,215 @@
     body {
       margin: 0;
       padding: 0;
-      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-family: 'Open Sans', sans-serif;
       font-size: 16px;
       line-height: 1.1;
-      color: #333;
+      color: #212121;
+      background-color: whitesmoke;
     }
 
     header {
-      margin-bottom: 15px;
-      padding: 15px 15px;
+      margin-bottom: 32px;
+      padding: 0 16px;
+      height: 64px;
       background-color: #f50057;
     }
 
     h1 {
       margin: 0;
       padding: 0;
+      font-family: 'Work Sans', sans-serif;
       font-size: 24px;
+      line-height: 64px;
       color: #fff;
     }
 
-    a {
-      color: #03A9F4;
-      text-decoration: none;
+    h2 {
+      margin-top: 8px;
+      margin-bottom: 14px;
+      font-family: 'Work Sans', sans-serif;
+      font-weight: 400;
+      font-size: 28px;
+      line-height: 34px;
+      text-transform: none;
     }
+
+    a {
+      color: #f50057;
+      text-decoration: underline;
+    }
+
+    p { margin-bottom: 16px; }
+
+    p.lead {
+      font-weight: 300;
+      font-style: italic;
+      font-size: 22px;
+      line-height: 36px;
+      color: #ff0080;
+    }
+
+    .inline-list {
+      margin: 0;
+      list-style: none;
+    }
+    .inline-list li { display: inline-block; }
+
+    .link-arrow,
+    .blinking-cursor { color: #ff0080;}
 
     .container {
       margin: 0 auto;
-      padding: 0 15px;
+      padding: 0 16px;
       width: 100%;
-      max-width: 900px;
+      max-width: 1024px;
     }
 
-    .before-after { border: 5px solid whitesmoke; }
+    .clear { clear: both; }
+
+    .masthead {
+      position: relative;
+      margin-bottom: 0;
+      height: auto;
+      background-color: #fff;
+    }
+
+    .masthead .container { padding: 0 75px; }
+
+    .masthead h1 {
+      margin: 0;
+      padding: 8px 0;
+      font-size: 32px;
+      line-height: initial;
+      font-weight: 300;
+      text-align: center;
+      color: #212121;
+    }
+
+    .masthead h1 a {
+      font: inherit;
+      text-decoration: inherit;
+      color: inherit;
+    }
+
+    .masthead h1 .logo {
+      width: auto;
+      height: 56px;
+      vertical-align: middle;
+    }
+
+    @media (max-width: 640px) {
+      .masthead h1 { font-size: 26px; }
+      .masthead h1 .logo { height: 43px; }
+    }
+
+    main { margin-bottom: 48px; }
+
+    .footer {
+      padding: 384px 0 64px 0;
+      background-color: #101010;
+    }
+
+    .footer .container { max-width: 1440px; }
+
+    .footer .sign-off {
+      font-weight: 300;
+      font-style: italic;
+      font-size: 36px;
+      line-height: 36px;
+      text-align: right;
+      text-transform: uppercase;
+      color: #fff;
+    }
+
+    .footer .sign-off img { max-width: 80%; }
+
+    .footer .social-links ul { text-align: right; }
+    .footer .social-links ul a {
+      font-size: 28px;
+      text-decoration: none;
+    }
+
+    .before-after-wrapper { margin-bottom: 48px; }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Before & After</h1>
+  <header class="masthead">
+    <div class="container">
+      <h1>
+        <a href="https://arkmuntasser.github.io" title="Home">
+          <img class="logo" src="https://arkmuntasser.github.io/assets/images/header/logo-at.png" alt="@"> arkmuntasser
+        </a>
+      </h1>
+    </div>
+    <div class="clear"></div>
   </header>
 
-  <div class="container">
-    <div class="before-after" data-ba-widget>
-      <div class="before-after-image before-after-image-before" data-ba-bottom>
-        <img src="before.jpg" alt="before">
-      </div>
-      <div class="before-after-image before-after-image-after" data-ba-top>
-        <img src="after.jpg" alt="after">
-      </div>
-  		<div class="before-after-handle" data-ba-handle></div>
-  	</div>
+  <header>
+    <div class="container">
+      <h1>Before & After</h1>
+    </div>
+  </header>
 
-    <p>
-      <small>Photos by <a href="http://www.theverge.com/tldr/2016/9/14/12917512/original-iphone-camera-vs-iphone-7-photo-comparison" target="_blank">James Bareham, The Verge</a></small>
-    </p>
-  </div>
+  <main>
+    <div class="before-after-wrapper">
+      <div class="container">
+        <div class="before-after" data-ba-widget>
+          <div class="before-after-image before-after-image-before" data-ba-bottom>
+            <img src="before.jpg" alt="before">
+          </div>
+          <div class="before-after-image before-after-image-after" data-ba-top>
+            <img src="after.jpg" alt="after">
+          </div>
+      		<div class="before-after-handle" data-ba-handle></div>
+          <noscript>
+            <div class="clear"></div>
+          </noscript>
+      	</div>
+
+        <p>
+          <small>Photos by <a href="http://www.theverge.com/tldr/2016/9/14/12917512/original-iphone-camera-vs-iphone-7-photo-comparison" target="_blank" title="original iphone camera vs iphone 7 photo comparison" rel="noopener">James Bareham, The Verge</a></small>
+        </p>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="container">
+        <h2>Details <span class="blinking-cursor">|</span></h2>
+        <p class="lead">
+          Grab the source and fork the repo on <a href="https://github.com/arkmuntasser/before-after/" title="before-after repo">GitHub</a>. This is licensed under the MIT license.
+        </p>
+        <p>
+          A simple slider like Buzzfeed or The Verge to show the before and after images of a given subject.
+        </p>
+        <p>
+          This comes with a noscript css file so the widget will continue to work even in an environment with javascript disabled.
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="sign-off">
+        <img src="https://arkmuntasser.github.io/assets/images/footer/cowboy.png" alt="See you space cowboy...">
+      </p>
+
+      <div class="social-links">
+        <ul class="inline-list">
+            <li>
+              <a href="https://twitter.com/arkmuntasser" target="_blank" rel="noopener"><i class="icon-twitter"></i></a>
+            </li>
+            <li>
+              <a href="https://github.com/arkmuntasser" target="_blank" rel="noopener"><i class="icon-github-circled"></i></a>
+            </li>
+            <li>
+              <a href="mailto:arkmuntasser@gmail.com" target="_blank" rel="noopener"><i class="icon-mail-alt"></i></a>
+            </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
 
   <script src="before-after.js"></script>
 </body>
